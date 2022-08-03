@@ -1,0 +1,10 @@
+<p>Are you sure you want to delete "{{item}}"?</p>
+
+<a href="{% url 'todo_app:list' %}" >Cancel</a>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm">
+</form>
+Footer
+©    2022 GitHub   , Inc.
